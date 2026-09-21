@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "vice-addon",
+  "version": "${version}",
+  "name": "Vice Addon",
+  "description": "Meteor Client addon with auto tool and pearl meta modules.",
+  "authors": [
+    "you"
+  ],
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.vice.addon.ViceAddon"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "160,60,255",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
