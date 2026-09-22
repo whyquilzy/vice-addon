@@ -66,7 +66,7 @@ public class AutoFirework extends Module {
             return;
         }
 
-        if (!mc.player.isFallFlying()) return;
+        if (!mc.player.isGliding()) return;
         if (mc.player.getVelocity().y >= velocityThreshold.get()) return;
 
         FindItemResult firework = searchInventory.get()
