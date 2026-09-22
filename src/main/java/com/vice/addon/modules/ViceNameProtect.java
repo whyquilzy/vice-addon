@@ -31,7 +31,7 @@ public class ViceNameProtect extends Module {
         .name("name")
         .description("The name to show instead of your real username.")
         .defaultValue("seasnail")
-        .onChanged(this::push)
+        .onChanged(newValue -> push())
         .build()
     );
 
@@ -39,7 +39,7 @@ public class ViceNameProtect extends Module {
         .name("hide-skin")
         .description("Also turns other players into Steve skins (mirrors name-protect's skin-protect).")
         .defaultValue(true)
-        .onChanged(this::push)
+        .onChanged(newValue -> push())
         .build()
     );
 
